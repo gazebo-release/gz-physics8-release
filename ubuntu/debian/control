@@ -6,15 +6,15 @@ Build-Depends: cmake,
                pkg-config,
                debhelper (>= 13),
                libbullet-dev,
-               libgz-cmake3-dev,
-               libgz-common5-geospatial-dev,
-               libgz-common5-graphics-dev,
-               libgz-common5-profiler-dev,
-               libgz-math7-dev,
-               libgz-math7-eigen3-dev,
-               libgz-plugin2-dev,
-               libgz-utils2-dev,
-               libgz-utils2-cli-dev,
+               libgz-cmake4-dev,
+               libgz-common6-geospatial-dev,
+               libgz-common6-graphics-dev,
+               libgz-common6-profiler-dev,
+               libgz-math8-dev,
+               libgz-math8-eigen3-dev,
+               libgz-plugin3-dev,
+               libgz-utils3-dev,
+               libgz-utils3-cli-dev,
 # DART from packages.o.o repositories
                libdart6.13-dev,
                libdart6.13-collision-bullet-dev,
@@ -24,7 +24,7 @@ Build-Depends: cmake,
                libdart6.13-external-odelcpsolver-dev,
                libdart6.13-utils-dev,
                libdart6.13-utils-urdf-dev,
-               libsdformat14-dev
+               libsdformat15-dev
 Vcs-Browser: https://github.com/gazebosim/gz-physics
 Vcs-Git: https://github.com/gazebo-release/gz-physics8-release
 Standards-Version: 4.5.1
@@ -33,11 +33,11 @@ Homepage: http://gazebosim.org/
 Package: libgz-physics8-core-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-cmake3-dev,
-         libgz-math7-dev,
-         libgz-plugin2-dev,
+Depends: libgz-cmake4-dev,
+         libgz-math8-dev,
+         libgz-plugin3-dev,
          libgz-physics8 (= ${binary:Version}),
-         libgz-utils2-dev,
+         libgz-utils3-dev,
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Physics classes and functions for robot apps - Development files
@@ -50,8 +50,8 @@ Package: libgz-physics8-sdf-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-physics8-core-dev (= ${binary:Version}),
-         libgz-cmake3-dev,
-         libsdformat14-dev,
+         libgz-cmake4-dev,
+         libsdformat15-dev,
          libgz-physics8 (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -65,9 +65,9 @@ Package: libgz-physics8-mesh-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-physics8-core-dev (= ${binary:Version}),
-         libgz-cmake3-dev,
-         libgz-common5-geospatial-dev,
-         libgz-common5-graphics-dev,
+         libgz-cmake4-dev,
+         libgz-common6-geospatial-dev,
+         libgz-common6-graphics-dev,
          libgz-physics8 (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -81,9 +81,9 @@ Package: libgz-physics8-heightmap-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-physics8-core-dev (= ${binary:Version}),
-         libgz-cmake3-dev,
-         libgz-common5-geospatial-dev,
-         libgz-common5-graphics-dev,
+         libgz-cmake4-dev,
+         libgz-common6-geospatial-dev,
+         libgz-common6-graphics-dev,
          libgz-physics8 (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -112,14 +112,14 @@ Depends: libgz-physics8-core-dev (= ${binary:Version}),
          libgz-physics8-sdf-dev (= ${binary:Version}),
          libgz-physics8-mesh-dev (= ${binary:Version}),
          libgz-physics8-heightmap-dev (= ${binary:Version}),
-         libgz-cmake3-dev,
-         libgz-common5-geospatial-dev,
-         libgz-common5-graphics-dev,
-         libgz-math7-dev,
-         libgz-math7-eigen3-dev,
-         libgz-common5-dev,
-         libgz-plugin2-dev,
-         libsdformat14-dev,
+         libgz-cmake4-dev,
+         libgz-common6-geospatial-dev,
+         libgz-common6-graphics-dev,
+         libgz-math8-dev,
+         libgz-math8-eigen3-dev,
+         libgz-common6-dev,
+         libgz-plugin3-dev,
+         libsdformat15-dev,
          libgz-physics8-dartsim (= ${binary:Version}),
          ${misc:Depends}
 # There is no public header that includes DART upstream headers in gz-physics-dartsim
@@ -160,11 +160,11 @@ Section: libdevel
 Depends: libgz-physics8-core-dev (= ${binary:Version}),
          libgz-physics8-sdf-dev (= ${binary:Version}),
          libgz-physics8-mesh-dev (= ${binary:Version}),
-         libgz-cmake3-dev,
-         libgz-math7-dev,
-         libgz-math7-eigen3-dev,
-         libgz-plugin2-dev,
-         libsdformat14-dev,
+         libgz-cmake4-dev,
+         libgz-math8-dev,
+         libgz-math8-eigen3-dev,
+         libgz-plugin3-dev,
+         libsdformat15-dev,
          libgz-physics8-tpe (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -189,10 +189,10 @@ Description: Gazebo Physics classes and functions for robot apps - TPE library
 Package: libgz-physics8-tpelib-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-cmake3-dev,
-         libgz-math7-dev,
-         libgz-math7-eigen3-dev,
-         libgz-plugin2-dev,
+Depends: libgz-cmake4-dev,
+         libgz-math8-dev,
+         libgz-math8-eigen3-dev,
+         libgz-plugin3-dev,
          libgz-physics8-tpelib (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -220,14 +220,14 @@ Section: libdevel
 Depends: libgz-physics8-core-dev (= ${binary:Version}),
          libgz-physics8-sdf-dev (= ${binary:Version}),
          libgz-physics8-mesh-dev (= ${binary:Version}),
-         libgz-cmake3-dev,
-         libgz-common5-geospatial-dev,
-         libgz-common5-graphics-dev,
-         libgz-math7-dev,
-         libgz-math7-eigen3-dev,
-         libgz-plugin2-dev,
+         libgz-cmake4-dev,
+         libgz-common6-geospatial-dev,
+         libgz-common6-graphics-dev,
+         libgz-math8-dev,
+         libgz-math8-eigen3-dev,
+         libgz-plugin3-dev,
          libbullet-dev,
-         libsdformat14-dev,
+         libsdformat15-dev,
          libgz-physics8-bullet (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
