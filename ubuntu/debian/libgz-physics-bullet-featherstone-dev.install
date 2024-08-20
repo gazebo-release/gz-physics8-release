@@ -1,0 +1,5 @@
+usr/include/*/physics*/*/physics/bullet-featherstone*/*
+usr/lib/*/cmake/*-physics[0-99]-bullet-featherstone*/*
+usr/lib/*/lib*-physics[0-99]-bullet-featherstone*.so
+usr/lib/*/*-physics-[0-99]/engine-plugins/lib*-physics*-bullet-featherstone*.so
+usr/lib/*/pkgconfig/*-physics[0-99]-bullet-featherstone*.pc

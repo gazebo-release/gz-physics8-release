@@ -251,11 +251,48 @@ Description: Gazebo Physics classes and functions for robot apps - Bullet engine
  .
  Bullet component shared library
 
+Package: libgz-physics8-bullet-featherstone-dev
+Architecture: any
+Section: libdevel
+Depends: libgz-physics8-core-dev (= ${binary:Version}),
+         libgz-physics8-sdf-dev (= ${binary:Version}),
+         libgz-physics8-mesh-dev (= ${binary:Version}),
+         libgz-cmake4-dev,
+         libgz-common6-geospatial-dev,
+         libgz-common6-graphics-dev,
+         libgz-math8-dev,
+         libgz-math8-eigen3-dev,
+         libgz-plugin3-dev,
+         libbullet-dev,
+         libsdformat15-dev,
+         libgz-physics8-bullet-featherstone (= ${binary:Version}),
+         ${misc:Depends}
+Multi-Arch: same
+Description: Gazebo Physics classes and functions for robot apps - Development files
+ Gazebo Physics is a component in the Gazebo framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Bullet featherstone component, development files
+
+Package: libgz-physics8-bullet-featherstone
+Architecture: any
+Section: libs
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Multi-Arch: same
+Description: Gazebo Physics classes and functions for robot apps - Bullet featherstone engine
+ Gazebo Physics is a component in the Gazebo framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Bullet featherstone component shared library
+
+
 Package: libgz-physics8-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-physics8-core-dev (= ${binary:Version}),
          libgz-physics8-bullet-dev (= ${binary:Version}),
+         libgz-physics8-bullet-featherstone-dev (= ${binary:Version}),
          libgz-physics8-dartsim-dev (= ${binary:Version}),
          libgz-physics8-heightmap-dev (= ${binary:Version}),
          libgz-physics8-mesh-dev (= ${binary:Version}),
