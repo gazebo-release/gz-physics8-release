@@ -1,3 +1,9 @@
+gz-physics8 (8.2.0-1~noble) noble; urgency=medium
+
+  * gz-physics8 8.2.0-1 release
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Thu, 26 Jun 2025 17:20:29 +0200
+
 gz-physics8 (8.1.0-1~noble) noble; urgency=medium
 
   * gz-physics8 8.1.0-1 release
