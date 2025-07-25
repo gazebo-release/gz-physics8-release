@@ -1,3 +1,9 @@
+gz-physics8 (8.3.0-1~jammy) jammy; urgency=medium
+
+  * gz-physics8 8.3.0-1 release
+
+ -- Ian Chen <ichen@openrobotics.org>  Fri, 25 Jul 2025 22:39:07 +0000
+
 gz-physics8 (8.2.0-1~jammy) jammy; urgency=medium
 
   * gz-physics8 8.2.0-1 release
